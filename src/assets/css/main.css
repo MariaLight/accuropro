@@ -199,6 +199,21 @@ ul li::before {
     margin-top: 1rem;
 }
 
+li:not(:last-child) {
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 640px) {
+    ul li::before {
+        margin-right: .7rem;
+        margin-top: .7rem;
+    }
+
+    li:not(:last-child) {
+        margin-bottom: 1.1rem;
+    }
+}
+
 .is-hidden {
     display: none !important
 }
@@ -1937,5 +1952,178 @@ textarea {
 
     .discounts.reverse .discounts__content {
         padding-top: 0;
+    }
+}
+
+/* Healthcare  */
+.healthcare {
+    display: flex;
+    align-items: start;
+    gap: 4.3rem;
+    padding: 5.8rem 0 5rem;
+}
+
+.healthcare__img {
+    width: 56rem;
+    flex-shrink: 0;
+}
+
+.healthcare__img img {
+    width: 100%;
+}
+
+.healthcare__content {
+    padding-top: 2.2rem;
+}
+
+.healhcare__title {
+    margin-bottom: 2.5rem;
+    font-size: 4rem;
+}
+
+.healthcare__text {
+    font-size: 1.8rem;
+}
+
+.healthcare__text p:not(:last-child) {
+    margin-bottom: 2.4rem;
+}
+
+.healthcare__text strong {
+    font-weight: 500;
+}
+
+.healthcare__text ul li {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    color: #35404BB2;
+}
+
+.healthcare__text ul li:not(:last-child) {
+    margin-bottom: 1.7rem;
+}
+
+.healthcare__text ul li::before {
+    content: '';
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    background-image: url(../img/base/check.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    background-color: transparent;
+    margin-top: 0;
+}
+
+@media (max-width: 640px) {
+    .healthcare {
+        flex-direction: column-reverse;
+        gap: 3.2rem;
+        padding: 3.2rem 0 3rem;
+    }
+
+    .healthcare__img {
+        width: 100%;
+        height: 20rem;
+        overflow: hidden;
+    }
+
+    .healthcare__content {
+        padding-top: 0;
+    }
+
+    .healhcare__title {
+        margin-bottom: 2.5rem;
+        font-size: 2.8rem;
+    }
+
+    .healthcare__text {
+        font-size: 1.2rem;
+    }
+
+    .healthcare__text p:not(:last-child) {
+        margin-bottom: 1.8rem;
+    }
+
+    .healthcare__text ul li {
+        font-size: 1.2rem;
+    }
+
+    .healthcare__text ul li:not(:last-child) {
+        margin-bottom: 1.1rem;
+    }
+
+    .healthcare__text ul li::before {
+        width: 1.1rem;
+        height: 1.1rem;
+    }
+}
+
+/* Offerings  */
+.offerings {
+    padding: 5rem 0 5rem;
+}
+
+.offerings__title {
+    margin-bottom: 4.5rem;
+}
+
+.offerings__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.2rem;
+}
+
+.offerings__item {
+    border-radius: 1.2rem;
+    background-color: var(--iceblue);
+}
+
+.offerings__sutitle {
+    padding: 2.7rem 4rem 2.7rem 5.3rem;
+    background-color: #fff;
+    border-radius: 1.2rem;
+    font-size: 2.6rem;
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+.offerings__list ul {
+    padding: 3.5rem 3rem 4.5rem 3rem;
+    text-wrap: balance;
+}
+
+@media (max-width: 640px) {
+    .offerings {
+        padding: 2rem 0 2rem;
+    }
+
+    .offerings__title {
+        margin-bottom: 2.5rem;
+    }
+
+    .offerings__list {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2.2rem;
+    }
+
+    .offerings__item {
+        border-radius: 1rem;
+    }
+
+    .offerings__sutitle {
+        padding: 2.1rem 3.1rem;
+        font-size: 2rem;
+    }
+
+    .offerings__list ul {
+        padding: 2.8rem 2rem 2.5rem 2rem;
     }
 }
