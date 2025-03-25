@@ -323,7 +323,7 @@ textarea {
 @media (max-width: 640px) {
     .main-btn {
         font-size: 1.6rem;
-        padding: 1.5rem;
+        padding: 1.1rem 2.6rem;
         text-align: center;
     }
 }
@@ -2125,5 +2125,182 @@ textarea {
 
     .offerings__list ul {
         padding: 2.8rem 2rem 2.5rem 2rem;
+    }
+}
+
+/* Reporting  */
+.repotring {
+    padding: 5.8rem 0 5.4rem;
+    display: flex;
+    align-items: center;
+    gap: 4.3rem;
+}
+
+.reporting__img {
+    overflow: hidden;
+    width: 56rem;
+    flex-shrink: 0;
+}
+
+.reporting img {
+    min-width: 100%;
+}
+
+.reporting__text {
+    font-size: 2.4rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.reporting__subtitle {
+    font-size: 3.2rem;
+    line-height: 1.6;
+    font-weight: 500;
+    margin-bottom: .4rem;
+}
+
+.reporting__block:not(:last-child) {
+    margin-bottom: 4.5rem;
+}
+
+.reporting__block__title {
+    font-size: 2.4rem;
+    line-height: 1.6;
+    margin-bottom: 2.7rem;
+    font-weight: 400;
+    color: #737E88;
+}
+
+.reporting__box {
+    padding: 3rem;
+    background-color: #fff;
+    border-radius: 1.2rem;
+    font-size: 1.8rem;
+}
+
+.reporting__btn {
+    margin-top: 2.6rem;
+}
+
+@media (max-width: 640px) {
+    .repotring {
+        padding: 2.6rem 0 4.4rem;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 3.6rem;
+    }
+
+    .reporting__img {
+        width: 100%;
+        height: 26.8rem;
+        border-radius: 1.2rem;
+    }
+
+    .reporting img {
+        min-width: 100%;
+    }
+
+    .reporting__text {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .reporting__subtitle {
+        font-size: 1.7rem;
+        margin-bottom: .2rem;
+    }
+
+    .reporting__block:not(:last-child) {
+        margin-bottom: 3.5rem;
+    }
+
+    .reporting__block__title {
+        font-size: 1.3rem;
+        margin-bottom: 2.6rem;
+    }
+
+    .reporting__box {
+        width: 100%;
+        padding: 2.5rem;
+        font-size: 1.3rem;
+    }
+
+    .reporting__btn {
+        margin-top: 1.8rem;
+        font-size: 1.2rem;
+    }
+}
+
+/* Coniderations  */
+
+.cons {
+    padding: 5.4rem 0 8.1rem;
+}
+
+.cons-swiper {
+    position: relative;
+}
+
+.cons__description {
+    max-width: 75.3rem;
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
+}
+
+.cons__block {
+    background-color: var(--iceblue);
+    padding: 3.6rem 3rem 5.2rem 3rem;
+    border-radius: 1.2rem;
+}
+
+.cons__block__title {
+    font-size: 2.4rem;
+    line-height: 1.2;
+    font-weight: 500;
+    margin-bottom: 2.3rem;
+    color: #405A70;
+}
+
+.cons__text {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    color: #35404BCC;
+}
+
+.cons__text>*:not(:last-child) {
+    margin-bottom: 3.5rem;
+}
+
+.cons__text ul {
+    color: var(--black);
+}
+
+@media (max-width: 640px) {
+    .cons {
+        padding: 2.2rem 0 3.8rem;
+    }
+
+    .cons__description {
+        max-width: 100%;
+        font-size: 1.2rem;
+        margin-bottom: 9.7rem;
+    }
+
+    .cons__block {
+        padding: 2.6rem 2rem 4rem 2.6rem;
+        border-radius: 1.2rem;
+    }
+
+    .cons__block__title {
+        font-size: 1.7rem;
+        margin-bottom: 1.8rem;
+    }
+
+    .cons__text {
+        font-size: 1.3rem;
+    }
+
+    .cons__text>*:not(:last-child) {
+        margin-bottom: 2.5rem;
     }
 }

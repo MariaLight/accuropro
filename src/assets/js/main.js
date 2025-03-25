@@ -130,6 +130,25 @@ document.addEventListener('DOMContentLoaded', function () {
             prevEl: '.resources-swiper .swiper-button-prev',
         },
     });
+    var swiperCons = new Swiper(".cons-swiper", {
+        loop: false,
+        spaceBetween: 20,
+        slidesPerView: 2,
+        breakpoints: {
+            320: {
+                spaceBetween: 10,
+                slidesPerView: 1,
+            },
+            640: {
+                spaceBetween: 20,
+                slidesPerView: 2,
+            }
+        },
+        navigation: {
+            nextEl: '.cons-swiper .swiper-button-next',
+            prevEl: '.cons-swiper .swiper-button-prev',
+        },
+    });
     // var swiper2 = new Swiper(".mySwiper2", {
     //     loop: true,
     //     spaceBetween: 30,
