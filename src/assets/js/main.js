@@ -149,17 +149,14 @@ document.addEventListener('DOMContentLoaded', function () {
             prevEl: '.cons-swiper .swiper-button-prev',
         },
     });
-    // var swiper2 = new Swiper(".mySwiper2", {
-    //     loop: true,
-    //     spaceBetween: 30,
-    //     navigation: {
-    //         nextEl: ".swiper-button-next",
-    //         prevEl: ".swiper-button-prev",
-    //     },
-    //     thumbs: {
-    //         swiper: swiper,
-    //     },
-    // });
+    const readmoreBtn = document.querySelector('#readmore');
+    const readmoreText = document.querySelector('.hidden');
+    if (readmoreBtn) {
+        readmoreBtn.addEventListener('click', () => {
+            readmoreText.classList.add('show');
+            readmoreBtn.style.display = 'none';
+        })
+    }
 
     // const showTab = (elTabBtn) => {
     //     const elTab = elTabBtn.closest('.tab');

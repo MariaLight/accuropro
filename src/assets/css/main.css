@@ -2476,7 +2476,7 @@ textarea {
     color: #35404BCC;
 }
 
-.edu__text strong{
+.edu__text strong {
     color: #35404B;
     font-size: 1.8rem;
 }
@@ -2514,13 +2514,14 @@ textarea {
         font-size: 1.2rem;
     }
 
-    .edu__text strong{
+    .edu__text strong {
         font-size: 1.3rem;
     }
 
     .edu__text>*:not(:last-child) {
         margin-bottom: 2rem;
     }
+
     .edu__btn {
         padding: 1.5rem 5.7rem;
         font-size: 1.6rem;
@@ -2540,15 +2541,185 @@ textarea {
     gap: 2rem;
     margin-bottom: 7rem;
 }
+
 @media (max-width: 640px) {
     .awards {
-            padding: 3.3rem 2.3rem 4.7rem;
-            margin-top: 0;
-        }
-    
-        .awards__header {
-            grid-template-columns: repeat(1, 1fr);
-            gap: 1.6rem;
-            margin-bottom: 3.6rem;
-        }
+        padding: 3.3rem 2.3rem 4.7rem;
+        margin-top: 0;
+    }
+
+    .awards__header {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.6rem;
+        margin-bottom: 3.6rem;
+    }
+}
+
+/* Company  */
+.about .subtitle {
+    width: 100%;
+    margin-top: 0;
+}
+
+.subtitle__blue::before {
+    background-image: url(../img/base/check-blue.svg);
+}
+
+.goal {
+    display: flex;
+    align-items: start;
+    padding: 4.7rem 0 5.7rem;
+    gap: 4.3rem;
+}
+
+.img {
+    width: 56rem;
+    border-radius: 1.2rem;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.img img {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.goal__content {
+    padding-top: 2.6rem;
+}
+
+.goal__text {
+    font-size: 1.8rem;
+}
+
+.goal__text ul {
+    font-size: 1.6rem;
+}
+
+.goal__text>*:not(:last-child) {
+    margin-bottom: 2.7rem;
+}
+
+.goal__text li:not(:last-child) {
+    margin-bottom: 0;
+}
+
+.commitment {
+    padding: 4.5rem 5.6rem;
+    border-radius: 1.2rem;
+    background-color: #fff;
+}
+
+.text {
+    font-size: 1.8rem;
+}
+
+.text>*:not(:last-child) {
+    margin-bottom: 2.5rem;
+}
+
+.readmore {
+    padding: 1.7rem 0;
+    color: var(--blue);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 30rem;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: opacity .2s linear;
+}
+
+@media (hover:hover) {
+    .readmore:hover {
+        opacity: 0.6;
+    }
+}
+
+@media (hover:none) {
+    .readmore:active {
+        opacity: 0.6;
+    }
+}
+
+.readmore::after {
+    content: '';
+    display: block;
+    width: 2.4rem;
+    height: 2.4rem;
+    background-image: url(../img/svg/arrow-bottom.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hidden {
+    height: 0;
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden;
+    transition: all .2s linear;
+}
+
+.hidden.show {
+    height: auto;
+    opacity: 1;
+    z-index: 1;
+    visibility: visible;
+}
+
+@media (max-width: 640px) {
+
+    .goal {
+        flex-direction: column-reverse;
+        padding: 2.5rem 0;
+        gap: 2.9rem;
+    }
+
+    .goal__content {
+        padding-top: 0;
+    }
+
+    .goal__text {
+        font-size: 1.2rem;
+    }
+
+    .img {
+        width: 100%;
+    }
+
+    .goal__text ul {
+        font-size: 1.2rem;
+    }
+
+    .goal__text>*:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+
+    .commitment {
+        padding: 3.2rem 3rem;
+    }
+
+    .text {
+        font-size: 1.1rem;
+    }
+
+    .text>*:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+
+    .readmore {
+        padding: 1.2rem 0;
+        font-size: 1.2rem;
+        min-width: 100%;
+    }
+
+    .readmore::after {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+
 }
