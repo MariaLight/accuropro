@@ -2255,7 +2255,7 @@ textarea {
 
 .cons__block__title {
     font-size: 2.4rem;
-    line-height: 1.2;
+    line-height: 1.5;
     font-weight: 500;
     margin-bottom: 2.3rem;
     color: #405A70;
@@ -2302,5 +2302,144 @@ textarea {
 
     .cons__text>*:not(:last-child) {
         margin-bottom: 2.5rem;
+    }
+}
+
+/* Risk  */
+.risk {
+    display: flex;
+    align-items: start;
+    gap: 4rem;
+    padding: 5.1rem 0 2.3rem;
+}
+
+.risk__content {
+    padding-top: 2.5rem;
+}
+
+.risk__img {
+    width: 56rem;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 1.2rem;
+}
+
+.risk__img img {
+    width: 100%;
+}
+
+.risk__text {
+    font-size: 2.4rem;
+    line-height: 1.6;
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+
+.risk__small>*:not(:last-child),
+.risk__text>*:not(:last-child) {
+    margin-bottom: 3rem;
+}
+
+.risk__small {
+    font-size: 1.8rem;
+    line-height: 1.6;
+}
+
+.risk__small ul {
+    font-size: 1.6rem;
+}
+
+@media (max-width: 640px) {
+    .risk {
+        flex-direction: column;
+        gap: 3rem;
+        padding: 2.5rem 0 2.4rem;
+    }
+
+    .risk__content {
+        padding-top: 0;
+    }
+
+    .risk__img {
+        width: 100%;
+        height: 19rem;
+    }
+
+    .risk__img img {
+        height: 100%;
+    }
+
+    .risk__text {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .risk__small>*:not(:last-child),
+    .risk__text>*:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+
+    .risk__small {
+        font-size: 1.3rem;
+    }
+
+    .risk__small ul {
+        font-size: 1.2rem;
+    }
+
+    .risk__header {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+/* Support  */
+.support {
+    margin-top: 2.3rem;
+    margin-bottom: 7.1rem;
+    font-size: 1.8rem;
+    border-radius: 1.2rem;
+    background-color: #fff;
+    padding: 3.6rem 5rem 4.7rem 5.6rem;
+}
+
+.support__title {
+    margin-bottom: 1.7rem
+}
+
+.support__block {
+    display: flex;
+    align-items: flex-end;
+    gap: 7.2rem;
+    justify-content: space-between;
+    text-wrap: balance;
+}
+
+.support__btn {
+    flex-shrink: 0;
+}
+
+@media (max-width: 640px) {
+    .support {
+        margin-top: 2.4rem;
+        margin-bottom: 3.3rem;
+        font-size: 1.2rem;
+        padding: 3.3rem 3rem;
+    }
+
+    .support__title {
+        margin-bottom: 2.3rem
+    }
+
+    .support__block {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3.3rem;
+    }
+
+    .support__btn {
+        margin: 0 auto;
+        padding: 1.5rem 5.7rem;
+        font-size: 1.6rem;
     }
 }
