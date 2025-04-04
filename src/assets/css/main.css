@@ -381,73 +381,64 @@ textarea {
     }
 }
 
-.form__subtitle {
-    color: #2B2B2B;
-    font-family: 'Roboto';
-    text-align: center;
-    font-weight: 600;
-    font-size: 3.6rem;
-    line-height: 4.2rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid #2B2B2B80;
+.form__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.2rem 2.5rem;
 }
 
+.form__subtitle {
+    color: var(--black);
+    font-family: 'Onest';
+    text-align: left;
+    font-weight: 400;
+    font-size: 2.8rem;
+    line-height: 1.2;
+    margin-bottom: 3.6rem;
+    letter-spacing: -0.02em;
+}
 
 .form__subtitle,
 .form__text {
-    max-width: 50.3rem;
-    margin: 0 auto;
-}
-
-.form__subtitle {
-    margin-bottom: 2rem;
-}
-
-.form__text {
-    margin-bottom: 4rem;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    color: #818181;
-    font-size: 2rem;
-    line-height: 2.3rem;
-    font-weight: 400;
+    max-width: 47.4rem;
 }
 
 .form__label {
-    color: #000;
-    font-size: 1.6rem;
-    line-height: 1.8rem;
+    color: #323232;
+    font-size: 1.1rem;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+    font-family: 'Onest';
     font-weight: 400;
 }
 
 .form__input {
-    font-family: 'Roboto';
-    font-size: 1.6rem;
-    line-height: 1.8rem;
-    color: #2B2B2B;
+    font-family: 'Onest';
+    font-size: 1.3rem;
+    line-height: 1.3;
+    color: var(--black);
     background: transparent;
-    font-weight: 400;
-    padding: 3rem 2.1rem;
-    box-shadow: 0px 4px 10px 0px #0000000D;
-    border: 1px solid #2B2B2B;
+    font-weight: 500;
+    padding: 1.9rem 1.8rem;
+    border: 1px solid rgba(41, 49, 65, 0.2);
     width: 100%;
     outline: none;
-    width: 100%;
-    margin-bottom: 4rem;
-    border-radius: 2.5rem;
-    margin-top: 1rem;
+    margin-bottom: 0;
+    border-radius: .7rem;
+    margin-top: 1.2rem;
 }
 
 .form__input::placeholder {
-    color: #818181;
+    color: #293141;
+    opacity: 30%;
 }
 
 .form__submit p {
-    font-size: 1.6rem;
-    line-height: 1.2;
+    font-size: 1.1rem;
+    line-height: 1.3;
     text-wrap: balance;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+    letter-spacing: -0.02em;
 }
 
 .animated {
@@ -476,13 +467,12 @@ textarea {
 .custom-checkbox>span::before {
     content: '';
     display: inline-block;
-    width: 1.6rem;
-    height: 1.6rem;
+    width: 1.4rem;
+    height: 1.4rem;
     flex-shrink: 0;
     flex-grow: 0;
-    border: 1px solid #000;
-    border-radius: .2rem;
-    margin-right: .6rem;
+    border: 1px solid #323232;
+    margin-right: 1rem;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 70% 70%;
@@ -500,24 +490,22 @@ textarea {
 
 /* стили при наведении курсора на checkbox */
 .custom-checkbox>input:not(:disabled):not(:checked)+span:hover::before {
-    border-color: var(--black);
+    border-color: var(--blue);
 }
 
 /* стили для чекбокса, находящегося в фокусе */
 .custom-checkbox>input:focus+span::before {
-    border-color: var(--black);
+    border-color: var(--blue);
 }
 
 /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
 .custom-checkbox>input:focus:not(:checked)+span::before {
-    border-color: var(--black);
+    border-color: var(--blue);
 }
 
 /* стили для чекбокса, находящегося в состоянии checked */
 .custom-checkbox>input:checked+span::before {
-    border-color: var(--black);
-    background-color: var(--black);
-    background-image: url("data:image/svg+xml,%3Csvg width='21' height='21' viewBox='0 0 21 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.6741 5.89355L8.01619 15.7883L4.30566 12.0778' stroke='white' stroke-width='1.94595' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg width='21' height='21' viewBox='0 0 21 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.6741 5.89355L8.01619 15.7883L4.30566 12.0778' stroke='rgb(50, 50, 50)' stroke-width='1.94595' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
 }
 
 /* стили для чекбокса, находящегося в состоянии disabled */
@@ -526,83 +514,78 @@ textarea {
 }
 
 .form__btn {
-    margin-top: 2.7rem;
-    margin-left: auto;
-    margin-right: auto;
+
     width: 100%;
-    font-size: 2rem;
-    border-radius: 1rem;
+    font-size: 1.5rem;
+    border-radius: 5.2rem;
     padding: 2rem 5.7rem;
-    width: fit-content;
     letter-spacing: normal;
+    margin-top: 3.6rem;
+    margin-bottom: 1.5rem;
 }
 
 .acceptance__text {
-    font-size: 1.2rem;
-    line-height: 1;
-    font-weight: 200;
+    font-size: 1.1rem;
+    line-height: 1.3;
+    font-weight: 400;
+
+    color: #323232;
+
 }
 
 @media (max-width: 640px) {
     .form__subtitle {
-        font-size: 1.6rem;
-        line-height: 1.8rem;
-        padding-bottom: 1rem;
+        font-size: 2rem;
+        line-height: 1.18;
+        padding-bottom: 0;
+        margin-bottom: 3.9rem;
     }
 
 
     .form__subtitle,
     .form__text {
-        max-width: 25rem;
-        margin: 0 auto;
-    }
-
-    .form__subtitle {
-        margin-bottom: 1rem;
-    }
-
-    .form__text {
-        margin-bottom: 2rem;
-        font-size: 1.2rem;
-        line-height: 1.4rem;
+        max-width: 100%;
     }
 
     .form__label {
-        font-size: 1.2rem;
-        line-height: 1.4rem;
+        font-size: 1.1rem;
+        line-height: 1.3;
     }
 
     .form__input {
         font-size: 1.2rem;
-        line-height: 1.4rem;
-        padding: 1.1rem 1.7rem;
-        margin-bottom: 2rem;
-        border-radius: 1.2rem;
-        margin-top: .5rem;
+        line-height: 1.3;
+        padding: 1.8rem;
+        margin-bottom: 0;
+        border-radius: 0.7rem;
+        margin-top: 1.1rem;
     }
 
     .form__submit p {
-        font-size: 1.2rem;
-        margin-top: 1rem;
+        font-size: 1rem;
+        margin-top: 2.6rem;
     }
 
     .custom-checkbox>span::before {
-        width: 1rem;
-        height: 1rem;
-        margin-right: .4rem;
+        width: 1.4rem;
+        height: 1.4rem;
+        margin-right: 1rem;
     }
 
     .form__btn {
-        margin-top: 1.7rem;
-        font-size: 1.2rem;
-        border-radius: .5rem;
-        padding: 1rem 3rem;
+        margin-top: 0;
+        font-size: 1.5rem;
     }
 
     .acceptance__text {
         font-size: 1rem;
-        line-height: 1;
-        font-weight: 200;
+        line-height: 1.3;
+    }
+
+    .form__box {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.7rem;
     }
 }
 
@@ -611,7 +594,8 @@ textarea {
     z-index: 999;
     inset: 0;
     bottom: initial;
-    background: #000000B2;
+    background: #DFDFDF4D;
+    backdrop-filter: blur(30px);
     width: 100%;
     height: 100vh;
     display: -webkit-box;
@@ -643,9 +627,8 @@ textarea {
 
 .modal__content {
     border-radius: 1rem;
-    padding: 6.1rem 6.6rem 6.6rem;
-    box-shadow: 0px 4px 20px 0px #00000040;
-    background-color: #F7FAFC;
+    padding: 2.8rem 4.6rem 3.3rem 3.7rem;
+    background-color: #fff;
     width: 100%;
 }
 
@@ -656,8 +639,8 @@ textarea {
 
 .modal__close {
     cursor: pointer;
-    width: 5rem;
-    height: 5rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     background-color: transparent;
     display: -webkit-box;
@@ -676,21 +659,21 @@ textarea {
     transition: transform .2s;
     transition: transform .2s, -webkit-transform .2s;
     right: 1rem;
-    color: #2b2b2b;
+    color: #000;
 }
 
 .modal__close svg {
-    width: 2.4rem;
-    height: 2.4rem
+    width: 1.2rem;
+    height: 1.2rem
 }
 
 @media (max-width: 640px) {
     .modal__inner {
-        max-width: 34.8rem;
+        max-width: 28.6rem;
     }
 
     .modal__content {
-        padding: 3rem;
+        padding: 3.9rem 2.5rem;
     }
 }
 
@@ -2722,4 +2705,41 @@ textarea {
         height: 1.8rem;
     }
 
+}
+
+.modal--success {
+    background-color: #fff;
+    box-shadow: 0px 52.16px 62.1px -24.84px #37373740;
+    border: 0.62px solid #DDDDDD;
+    background: #F1F7FC;
+    color: #01315D;
+    font-size: 2.1rem;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+    text-align: center;
+    padding: 5rem 4rem;
+    border-radius: 1.8rem;
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    inset: 0;
+    margin: auto;
+    width: 40.7rem;
+    height: fit-content;
+}
+
+.modal--success.active {
+    z-index: 999;
+    opacity: 1;
+    visibility: visible;
+}
+@media (max-width: 640px) {
+    .modal--success {
+        font-size: 1.7rem;
+        padding: 3rem 2.2rem;
+        border-radius: 1.5rem;
+        width: 24.1rem;
+    }
+    
 }

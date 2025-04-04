@@ -29,7 +29,7 @@
                         </svg>
                     </a>
                     <div class="header__dropdown">
-                        <a href="" class="header__dropdown__link">texttext text </a>
+                        <a href="" class="header__dropdown__link">text</a>
                         <a href="" class="header__dropdown__link">text</a>
                         <a href="" class="header__dropdown__link">text</a>
                     </div>
@@ -126,7 +126,7 @@
                                 institutions, offering reliable
                                 protection for your practice.</p>
                         </div>
-                        <a href="#" class="banner__btn main-btn btn-reset">Read more</a>
+                        <button class="banner__btn main-btn btn-reset" data-modal="callback">Read more</button>
                     </div>
                     <div class="banner__img">
                         <img src="assets/img/base/doctor.png" alt="">
@@ -386,28 +386,43 @@
             <div class="modal__content main-screen__right">
                 <div class="modal-form ">
 
-                    <h3 class="form__subtitle">Оформление заказа</h3>
-                    <div class="form__text">Оставьте заявку и наши менеджеры перезвонят Вам в&nbsp;ближайшее время</div>
+                    <h3 class="form__subtitle">Leave a request and we will contact you as soon as possible</h3>
                     <form class="form__box">
-                        <label for="user-name" class="form__label">Как Вас зовут?*</label>
-                        <input type="text" class="input-reset form__input" name="user-name" id="user-name"
-                            placeholder="Иванов Иван" required>
-                        <label for="user-name" class="form__label">Ваш номер телефона*</label>
-                        <input type="tel" class="input-reset form__input" name="user-name"
-                            placeholder="+7 (999) 999-99-99" id="user-phone" required>
-                        <div class="form__submit">
-                            <label class="acceptance custom-checkbox">
-                                <input type="checkbox" name="acceptance">
-                                <span class="acceptance__text">Я соглашаюсь на обработку персональных данных</span>
-                            </label>
-                            <button type="submit" class="main-btn btn-reset form__btn">Оформить заказ</button>
+                        <div class="form__block">
+                            <label for="user-name" class="form__label">Your name</label>
+                            <input type="text" class="input-reset form__input" name="user-name" id="user-name"
+                                placeholder="Enter here" required>
+                        </div>
+                        <div class="form__block">
 
+                            <label for="user-phone" class="form__label">Phone number</label>
+                            <input type="tel" class="input-reset form__input" name="user-phone" placeholder="Enter here"
+                                id="user-phone" required>
+                        </div>
+                        <div class="form__block">
+
+                            <label for="user-email" class="form__label">E-mail</label>
+                            <input type="email" class="input-reset form__input" name="user-email"
+                                placeholder="Enter here" id="user-email" required>
+                        </div>
+                        <div class="form__submit">
+
+                            <button type="submit" class="main-btn btn-reset form__btn"> Send</button>
+                            <label class="acceptance custom-checkbox">
+                                <input type="checkbox" name="acceptance" checked>
+                                <span class="acceptance__text">By clicking the button, I agree to the terms of the
+                                    privacy policy</span>
+                            </label>
                         </div>
                     </form>
 
                 </div>
             </div>
         </div>
+    </div>
+    <div class="modal--success" id="success">
+        <p>Thank you for your request, we will respond as soon as possible.
+        </p>
     </div>
 
 </body>
